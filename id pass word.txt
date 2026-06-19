@@ -1,0 +1,4 @@
+- Admin : admin@campus.com / password123
+- Organizer : organizer@campus.com / password123
+- Student : student@campus.com / password123
+Project Structure
