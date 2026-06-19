@@ -1,0 +1,85 @@
+# Project Installation and Execution
+
+## Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/sawarkarr/Campus_event_management_system.git
+cd Campus_event_management_system
+```
+
+## Step 2: Install Project Dependencies
+
+```bash
+composer update
+```
+
+## Step 3: Configure Environment File
+
+```bash
+copy .env.example .env
+```
+
+Update the database credentials in the `.env` file.
+
+## Step 4: Generate Application Key
+
+```bash
+php artisan key:generate
+```
+
+## Step 5: Run Database Migrations
+
+```bash
+php artisan migrate
+```
+
+## Step 6: Seed the Database
+
+```bash
+php artisan db:seed
+```
+
+## Step 7: Clear Application Cache
+
+```bash
+php artisan optimize:clear
+```
+
+## Step 8: Start the Laravel Development Server
+
+```bash
+php artisan serve
+```
+
+The application will start at:
+
+```text
+http://127.0.0.1:8000
+```
+
+## Optional: Frontend Dependencies
+
+If the project uses Node.js packages:
+
+```bash
+npm install
+npm run dev
+```
+
+## Database Setup
+
+1. Start Apache and MySQL from XAMPP.
+2. Open phpMyAdmin.
+3. Create a new database.
+4. Update the database name in the `.env` file.
+5. Run migrations and seeders.
+
+## Commands Summary
+
+```bash
+composer update
+php artisan migrate
+php artisan db:seed
+php artisan optimize:clear
+php artisan serve
+```
